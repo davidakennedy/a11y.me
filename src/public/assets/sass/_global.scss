@@ -1,0 +1,207 @@
+hr {
+	background-color: $light-blue;
+	border: 0;
+	height: 1px;
+	margin-bottom: 1.5em;
+}
+
+/* Code */
+pre {
+	padding: 0 1em;
+}
+
+/* Tables */
+th {
+	text-align: left;
+}
+tr,
+th,
+td {
+	padding-right: 1.5em;
+	border-bottom: 0 solid $light-blue;
+}
+
+/* Forms */
+legend {
+	font-weight: bold;
+}
+
+button,
+input,
+select,
+textarea {
+        font-size: 100%; /* Corrects font size not being inherited in all browsers */
+        margin: 0; /* Addresses margins set differently in IE6/7, F3/4, S5, Chrome */
+        vertical-align: baseline; /* Improves appearance and consistency in all browsers */
+        *vertical-align: middle; /* Improves appearance and consistency in all browsers */
+}
+button,
+input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+        border: 1px solid $light-blue;
+        border-radius: 3px;
+        background: $off-white;
+        color: $black;
+        cursor: pointer; /* Improves usability and consistency of cursor style between image-type 'input' and others */
+        -webkit-appearance: button; /* Corrects inability to style clickable 'input' types in iOS */
+        font-size: $small;
+        line-height: 1;
+        padding: .6em 1em .4em;
+}
+button:hover,
+input[type="button"]:hover,
+input[type="reset"]:hover,
+input[type="submit"]:hover {
+        border-color: $blue;
+}
+button:focus,
+input[type="button"]:focus,
+input[type="reset"]:focus,
+input[type="submit"]:focus,
+button:active,
+input[type="button"]:active,
+input[type="reset"]:active,
+input[type="submit"]:active {
+	   border-color: $blue;
+}
+input[type="checkbox"],
+input[type="radio"] {
+        padding: 0; /* Addresses excess padding in IE8/9 */
+}
+input[type="search"] {
+        -webkit-appearance: textfield; /* Addresses appearance set to searchfield in S5, Chrome */
+        box-sizing: content-box;
+}
+input[type="search"]::-webkit-search-decoration { /* Corrects inner padding displayed oddly in S5, Chrome on OSX */
+        -webkit-appearance: none;
+}
+button::-moz-focus-inner,
+input::-moz-focus-inner { /* Corrects inner padding and border displayed oddly in FF3/4 www.sitepen.com/blog/2008/05/14/the-devils-in-the-details-fixing-dojos-toolbar-buttons/ */
+        border: 0;
+        padding: 0;
+}
+input[type="text"],
+input[type="email"],
+input[type="url"],
+input[type="password"],
+input[type="search"],
+textarea {
+        color: $black;
+        border: 1px solid $light-blue;
+        border-radius: 3px;
+}
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="url"]:focus,
+input[type="password"]:focus,
+input[type="search"]:focus,
+textarea:focus {
+		border: 1px solid $blue;
+        color: $black;
+}
+input[type="text"],
+input[type="email"],
+input[type="url"],
+input[type="password"],
+input[type="search"] {
+        padding: 3px;
+}
+textarea {
+        overflow: auto; /* Removes default vertical scrollbar in IE6/7/8/9 */
+        padding-left: 3px;
+        vertical-align: top; /* Improves readability and alignment in all browsers */
+        width: 98%;
+}
+
+/* Quotes */
+blockquote,
+q,
+cite {
+	font-style: italic;
+}
+blockquote {
+	padding-left: 1.5em;
+	border-left: 3px solid $light-blue;
+}
+blockquote > p {
+	padding: 0;
+}
+
+/* Lists */
+ul,
+ol {
+	list-style-position: inside;
+	padding: 0;
+}
+li ul,
+li ol {
+	margin: 0 1.5em;
+}
+dl dd {
+	margin-left: 1.5em;
+}
+dt {
+	font-family: $sans-serif;
+}
+
+/* Links */
+a {
+	color: $red;
+	text-decoration: underline;
+}
+a:hover {
+	text-decoration: none;
+}
+a:focus {
+	background-color: $red;
+	color: $white;
+	outline: thin dotted $black;
+}
+/* Better CSS Outline Suppression */
+a:hover,
+a:active {
+	outline: none;
+}
+.site-title a {
+	color: $black;
+	text-decoration: none;
+}
+.site-title a:focus {
+	background-color: transparent;
+}
+
+/* Media */
+figure {
+	margin: 0;
+}
+
+/* Fluid images */
+img,
+object,
+embed,
+video {
+	height: auto; /* Make sure images are scaled correctly. */
+	max-width: 100%; /* Adhere to container width. */
+}
+img {
+	/* Improve IE's resizing of images */
+	-ms-interpolation-mode: bicubic;
+}
+
+/* Selected text */
+::-moz-selection {
+	/* Selected text */
+	background: $red;
+	color: $white;
+	text-shadow: none;
+}
+::selection {
+	/* Selected text */
+	background: $red;
+	color: $white;
+	text-shadow: none;
+}
+
+/* Utilities */
+@include utilities;

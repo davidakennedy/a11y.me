@@ -1,0 +1,16 @@
+/* Base
+ *
+ * Very basic settings that apply broadly.
+ *
+ */
+
+body {
+	background-color: $white;
+	min-height: 100%;
+	/* Improve default text rendering, handling of kerning pairs and ligatures */
+	text-rendering:optimizeLegibility;
+}
+
+.wrapper {
+	background: url("/assets/img/bg.png")
+}

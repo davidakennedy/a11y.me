@@ -1,0 +1,42 @@
+{
+  "name": "a11y.me",
+  "version": "0.1.0",
+  "description": "A good start on web accessibility for you.",
+  "homepage": "http://a11y.me/",
+  "author": {
+    "name": "David A. Kennedy",
+    "email": "me@davidakennedy.com",
+    "url": "http://davidakennedy.com/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/davidakennedy/a11y.me.git"
+  },
+  "bugs": {
+    "url": "https://github.com/davidakennedy/a11y.me/issues"
+  },
+  "licenses": [
+    {
+      "type": "GNU General Public License, Version 2",
+      "url": "https://github.com/davidakennedy/a11y.me/blob/master/license.txt"
+    }
+  ],
+  "engines": {
+    "node": ">=0.8.0"
+  },
+  "devDependencies": {
+    "grunt": "~0.4.2",
+    "grunt-contrib-concat": "~0.3.0",
+    "grunt-contrib-uglify": "~0.3.2",
+    "grunt-contrib-imagemin": "~0.5.0",
+    "grunt-contrib-watch": "~0.5.3",
+    "grunt-contrib-sass": "~0.7.0",
+    "grunt-contrib-jshint": "~0.8.0",
+    "grunt-contrib-csslint": "~0.2.0",
+    "grunt-autoprefixer": "~0.6.5",
+    "assemble": "~0.4.36",
+    "grunt-contrib-clean": "~0.5.0",
+    "grunt-contrib-copy": "~0.5.0",
+    "grunt-contrib-htmlmin": "~0.2.0"
+  }
+}
