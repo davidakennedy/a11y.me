@@ -66,7 +66,6 @@ module.exports = function(grunt) {
                 dist: {
                     options: {
                         style: 'compressed',
-                        compass: true
                     },
                     files: {
                         'assets/css/build/style.css': 'assets/sass/style.scss'
