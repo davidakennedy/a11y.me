@@ -1,6 +1,6 @@
 # Accessibility & Me
 
-Just an easy collection of starter files for web projects.
+A good start on web accessibility for you.
 
 ## Why?
 
@@ -18,7 +18,7 @@ This wouldn't be possible without these great projects:
 
 ### Contributing
 
-Hold tight on that for now.
+Suggest new resources by [opening an issue](https://github.com/davidakennedy/a11y.me/issues).
 
 ### License
 
