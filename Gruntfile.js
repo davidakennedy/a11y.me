@@ -153,6 +153,7 @@ module.exports = function(grunt) {
 	grunt.loadNpmTasks('grunt-contrib-clean');
 	grunt.loadNpmTasks('grunt-contrib-copy');
 	grunt.loadNpmTasks('grunt-contrib-htmlmin');
+	grunt.loadNpmTasks('grunt-contrib-watch');
 
 	// 4. Where we tell Grunt what to do when we type "grunt" into the terminal.
 	grunt.registerTask('default', ['concat', 'uglify', 'jshint', 'imagemin', 'sass', 'csslint:lax', 'autoprefixer', 'clean', 'copy', 'htmlmin']);
