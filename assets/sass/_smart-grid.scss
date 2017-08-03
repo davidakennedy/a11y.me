@@ -5,12 +5,12 @@ $flexbox_support: false;
 @import "smart-grid-columns";
 
 .container {
-    @include container;
+	@include container;
 }
 
 .container,
 .row {
-    @include clearfix;
+	@include clearfix;
 }
 
 @if $flexbox_support == true {
