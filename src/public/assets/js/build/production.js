@@ -1,45 +1,37 @@
-// Avoid `console` errors in browsers that lack a console.
-(function() {
-    var method;
-    var noop = function () {};
-    var methods = [
-        'assert', 'clear', 'count', 'debug', 'dir', 'dirxml', 'error',
-        'exception', 'group', 'groupCollapsed', 'groupEnd', 'info', 'log',
-        'markTimeline', 'profile', 'profileEnd', 'table', 'time', 'timeEnd',
-        'timeStamp', 'trace', 'warn'
-    ];
-    var length = methods.length;
-    var console = (window.console = window.console || {});
+/**
+ * File: main.js.
+ *
+ * A few utility functions.
+ */
+( function() {
+	// Test for JavaScript.
+	var html = document.documentElement;
+	if ( html.className === 'no-js' ) {
+		html.className = html.className.replace( 'no-js', 'js' );
+	}
 
-    while (length--) {
-        method = methods[length];
+	// Helps with accessibility for keyboard only users.
+	// Learn more: https://git.io/vWdr2 (Thanks Underscores!)
+	var isIe = /(trident|msie)/i.test( navigator.userAgent );
 
-        // Only stub undefined methods.
-        if (!console[method]) {
-            console[method] = noop;
-        }
-    }
-}());
+	if ( isIe && document.getElementById && window.addEventListener ) {
+		window.addEventListener( 'hashchange', function() {
+			var id = location.hash.substring( 1 ),
+				element;
 
-// Place any jQuery/helper plugins in here.
+			if ( ! ( /^[A-z0-9_-]+$/.test( id ) ) ) {
+				return;
+			}
 
-/* Thanks: http://www.hongkiat.com/blog/css-sticky-position/ */
-$(document).ready(function() {
-    var stickyHeaderTop = $('.header').offset().top;
+			element = document.getElementById( id );
 
-    var stickyHeader = function(){
-    var scrollTop = $(window).scrollTop();
-         
-    if (scrollTop > stickyHeaderTop) { 
-        $('.header').addClass('sticky');
-    } else {
-        $('.header').removeClass('sticky'); 
-    }
-    };
+			if ( element ) {
+				if ( ! ( /^(?:a|select|input|button|textarea)$/i.test( element.tagName ) ) ) {
+					element.tabIndex = -1;
+				}
 
-    stickyHeader();
-
-    $(window).scroll(function() {
-        stickyHeader();
-    });
-});
+				element.focus();
+			}
+		}, false );
+	}
+} )();
