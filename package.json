@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/davidakennedy/a11y.me/issues"
   },
-  "homepage": "https://github.com/davidakennedy/a11y.me#readme"
+  "homepage": "https://github.com/davidakennedy/a11y.me#readme",
+  "devDependencies": {
+    "@11ty/eleventy": "^0.12.1"
+  }
 }
