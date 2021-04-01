@@ -22,6 +22,7 @@
   "devDependencies": {
     "@11ty/eleventy": "^0.12.1",
     "clean-css": "^5.1.2",
+    "html-minifier": "^4.0.0",
     "luxon": "^1.26.0",
     "markdown-it": "^10.0.0",
     "markdown-it-anchor": "^7.1.0",
