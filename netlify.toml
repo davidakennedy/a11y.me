@@ -1,0 +1,39 @@
+[build]
+  publish = "_site"
+  command = "npm run build"
+
+# Redirect Netlify subdomain
+[[redirects]]
+  from = "https://a11yme.netlify.app/*"
+  to = "https://a11y.me"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "http://a11yme.netlify.app/*"
+  to = "https://a11y.me"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "https://www.a11yme.netlify.app/*"
+  to = "https://a11y.me"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "http://www.a11yme.netlify.app/*"
+  to = "https://a11y.me"
+  status = 301
+  force = true
+
+[[headers]]
+  for = "/*"
+  [headers.values]
+    Content-Security-Policy = "form-action https:"
+    Feature-Policy = "vibrate 'none'; geolocation 'none'; midi 'none'; notifications 'none'; push 'none'; sync-xhr 'none'; microphone 'none'; camera 'none'; magnetometer 'none'; gyroscope 'none'; speaker 'none'; vibrate 'none'; fullscreen 'none'; payment 'none'"
+    Referrer-Policy = "strict-origin-when-cross-origin"
+    Strict-Transport-Security = "max-age=2592000"
+    X-Content-Type-Options = "nosniff"
+    X-Frame-Options = "DENY"
+    X-XSS-Protection = "1; mode=block"
