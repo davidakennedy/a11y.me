@@ -1,0 +1,15 @@
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{ renderData.title or title or metadata.title }} | {{ metadata.title }}</title>
+  {% include "partials/meta.njk" %}
+  {% include "partials/seo.njk" %}
+  {% set css %}
+    {% include "css/style.css" %}
+  {% endset %}
+  {% if build.environment == "prod" %}
+  <style>{{ css | cssmin | safe }}</style>
+  {% else %}
+  <style>{{ css | safe }}</style>
+  {% endif %}
+</head>

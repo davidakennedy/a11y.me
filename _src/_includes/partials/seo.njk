@@ -1,0 +1,40 @@
+{%- set absolutePageUrl -%}{{ page.url | url | absoluteUrl(metadata.url) }}{%- endset -%}
+
+{# Page-Specific #}
+<meta name="description" content="{{ renderData.description or description or metadata.description }}">
+<meta property="og:title" content="{{ title or metadata.title }}">
+<meta property="og:description" content="{{ description or metadata.description }}">
+<meta property="og:url" content="{{ absolutePageUrl }}">
+<meta property="og:image" content="{%- if image -%}{{ image | imgPath | url | absoluteUrl(metadata.url) }}{%- else -%}{{ metadata.author.avatar | url | absoluteUrl(metadata.url) }}{%- endif -%}">
+<meta name="twitter:card" content="{% if isPost -%}summary_large_image{% else %}summary{% endif %}">
+
+{# General #}
+<meta name="author" content="{{ metadata.author.name }}">
+<meta property="og:site_name" content="{{ metadata.title }}">
+<meta property="og:locale" content="{{ metadata.locale }}">
+<meta name="twitter:site" content="@{{ metadata.author.social.twitter.name }}">
+<meta name="twitter:creator" content="@{{ metadata.author.name }}">
+
+<link rel="canonical" href="{{ absolutePageUrl }}">
+
+{# JSON LD #}
+<script type="application/ld+json">
+    {
+        "name":"{{ metadata.author.name }}",
+        "description":"{{ metadata.description }}",
+        "author": {
+            "@type":"Person",
+            "name":"{{ metadata.author.name }}"
+        },
+        "@type":"WebSite",
+        "url":"{{ metadata.url }}",
+        "image":"{{ metadata.url }}assets/img/logo/logo.jpg",
+        "headline":"{{ metadata.title }}",
+        "sameAs":[
+            "{{ metadata.author.social.twitter.url }}",
+            "{{ metadata.author.social.github.url }}",
+            "{{ metadata.author.social.codepen.url }}"
+        ],
+        "@context":"http://schema.org"
+    }
+</script>
