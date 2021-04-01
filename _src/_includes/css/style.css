@@ -1,0 +1,386 @@
+/* CSS Reset 
+ * Inspired by: https://piccalil.li/blog/a-modern-css-reset
+*/
+*,
+:after,
+:before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  color: inherit;
+  word-break: break-word;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Remove all animations and transitions for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* Variables */
+:root {
+  /* Colors */
+  --background: #fffffe;
+  --headline: #272343;
+  --lighttext: #767676;
+  --primary: #ffd803;
+  --secondary: #e3f6f5;
+  --text: #2d334a;
+  background-color: var(--background);
+  color: var(--text);
+  font-family: var(--font-serif);
+  font-size: calc(0.65vw + 1em);
+  font-weight: 400;
+  line-height: var(--line-height);
+}
+
+/* Global */
+/* Utilities */
+/* Accessibility utilities */
+.sr-only {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
+.sr-only.focusable:active,
+.sr-only.focusable:focus {
+  clip: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  position: static;
+  white-space: inherit;
+  width: auto;
+}
+
+/* Hide visually and from screen readers, but maintain layout */
+.invisible {
+  visibility: hidden;
+}
+
+/* Clear floats */
+.clear:before,
+.clear:after {
+  content: "";
+  display: table;
+  table-layout: fixed;
+}
+
+.clear:after {
+  clear: both;
+}
+
+/* Make something stand out */
+.callout {
+  border: 2px solid var(--lighttext);
+  border-radius: var(--border-thick);
+  padding: var(--s-1);
+}
+
+/* Big 'ol text */
+.intro {
+  font-size: var(--s2);
+}
+
+/* Stack utility
+ every-layout.dev */
+.stack > * + *,
+.stack + .stack,
+.stack > .stack {
+  margin-top: var(--stack-space, 1em);
+}
+
+.wrapper {
+  margin: 0 auto;
+  max-width: 50rem;
+  padding: var(--s6) var(--s1);
+}
+
+/* Elements */
+h1,
+.h1,
+h2,
+.h2,
+h3,
+.h3,
+h4,
+.h4 {
+  clear: both;
+  color: var(--headline);
+  font-family: var(--font-headline);
+  font-weight: 700;
+  hyphens: auto;
+  line-height: var(--line-height-small);
+  word-wrap: break-word;
+}
+
+h1,
+.h1 {
+  font-size: var(--s4);
+}
+
+h2,
+.h2 {
+  font-size: var(--s3);
+}
+
+h3,
+.h3 {
+  font-size: var(--s2);
+}
+
+h4,
+.h4 {
+  font-size: var(--s1);
+}
+
+b,
+strong {
+  font-weight: 700;
+}
+
+abbr {
+  border-bottom: 1px dotted var(--lighttext);
+  cursor: help;
+}
+
+mark {
+  background: var(--secondary);
+  color: var(--text);
+  text-decoration: none;
+}
+
+small {
+  font-size: var(--s-2);
+}
+
+hr {
+  background-image: radial-gradient(currentColor 0.5px, transparent 0.5px);
+  background-size: calc(10 * 0.5px) calc(10 * 0.5px);
+  border: 0;
+  height: 15px;
+  margin-top: 0;
+}
+
+ul,
+ol {
+  margin-left: var(--s1);
+  margin-top: 0;
+  padding: 0;
+}
+
+ul {
+  list-style: disc;
+}
+
+ol {
+  list-style: decimal;
+}
+
+li > ul,
+li > ol {
+  margin-bottom: 0;
+  margin-left: var(--s1);
+}
+
+dt {
+  border-bottom: 1px solid var(--lighttext);
+  font-family: var(--font-headline);
+  font-weight: 700;
+}
+
+dd {
+  margin-left: var(--s1);
+  margin-top: 0;
+}
+
+/* Links */
+a {
+  color: var(--text);
+  position: relative;
+  text-decoration: underline;
+  text-decoration-color: var(--lighttext);
+  text-decoration-skip-ink: auto;
+}
+
+a:hover {
+  background-color: var(--primary);
+  outline: 0;
+  text-decoration: none;
+}
+
+a:focus {
+  background-color: var(--primary);
+  outline: 2px dashed;
+  outline-offset: 2px;
+  text-decoration: none;
+}
+
+a:active {
+  outline: 0;
+  top: 2px;
+}
+
+h1 a,
+.h1,
+h2 a,
+.h2,
+h3 a,
+.h3,
+h4 a,
+.h4 {
+  color: var(--headline);
+}
+
+.skip-link {
+  font-family: var(--font-serif);
+  font-size: var(--s-1);
+  font-weight: 700;
+  left: var(--s3);
+  max-width: none;
+  padding: var(--s-3);
+  position: absolute;
+}
+
+.skip-link.focusable:focus {
+  position: absolute;
+}
+
+.image-link {
+  display: block;
+}
+
+/* Widths */
+.page-content p,
+.page-content li,
+.page-content dt,
+.page-content dd {
+  max-width: var(--measure);
+}
+
+.page-content h2,
+.page-content h3,
+.page-content h4 {
+  max-width: var(--measure-narrow);
+}
+
+.page-content > h2 + *,
+.page-content > h3 + *,
+.page-content > h4 + *,
+.page-content > dt + * {
+  --stack-space: var(--s-3);
+}
+
+/* Containers */
+.site-content {
+  max-width: var(--measure-wide);
+}
+
+.site-content[tabindex="-1"]:focus {
+  outline: 0;
+}
+
+.site-footer {
+  text-align: center;
+}
+
+/* Print */
+@media print {
+  @page {
+    margin: 0.5in;
+  }
+
+  .site-header,
+  .site-footer {
+    display: none;
+  }
+
+  * {
+    background: #fff !important;
+    box-shadow: none !important;
+    color: #000 !important;
+    font-size: 14pt !important;
+    text-shadow: none !important;
+  }
+
+  h1 {
+    font-size: 28pt !important;
+  }
+
+  h2 {
+    font-size: 24pt !important;
+  }
+
+  h3 {
+    font-size: 22pt !important;
+  }
+
+  h4 {
+    font-size: 20pt !important;
+  }
+
+  a,
+  a:visited {
+    text-decoration: underline;
+  }
+
+  a[href]::after {
+    content: " (" attr(href) ")";
+  }
+
+  abbr[title]::after {
+    content: " (" attr(title) ")";
+  }
+
+  /*
+   * Don't show links that are fragment identifiers,
+   * or use the `javascript:` pseudo protocol
+  */
+  a[href^="#"]::after,
+  a[href^="javascript:"]::after {
+    content: "";
+  }
+
+  pre {
+    white-space: pre-wrap !important;
+  }
+
+  p,
+  h2,
+  h3 {
+    orphans: 3;
+    widows: 3;
+  }
+
+  h2,
+  h3 {
+    page-break-after: avoid;
+  }
+
+  ul,
+  ol {
+    page-break-inside: avoid;
+  }
+}
