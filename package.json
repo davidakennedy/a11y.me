@@ -4,7 +4,9 @@
   "description": "A good start on web accessibility for you.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "ELEVENTY_ENV=prod npx @11ty/eleventy",
+    "serve": "ELEVENTY_ENV=dev npx @11ty/eleventy --serve",
+    "debug": "DEBUG=* @11ty/eleventy"
   },
   "repository": {
     "type": "git",
