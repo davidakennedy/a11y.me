@@ -1,0 +1,25 @@
+{
+  "title": "Accessibility and Me",
+  "url": "https://davidakennedy.com/",
+  "description": "A good start on web accessibility for you.",
+  "locale": "en_US",
+  "author": {
+    "name": "David A. Kennedy",
+    "email": "me@davidakennedy.com",
+    "avatar": "/assets/img/favicons/android-chrome-512x512.png",
+    "social": {
+      "twitter": {
+        "name": "davidakennedy",
+        "url": "https://twitter.com/davidakennedy"
+      },
+      "github": {
+        "name": "davidakennedy",
+        "url": "https://github.com/davidakennedy"
+      },
+      "codepen": {
+        "name": "davidakennedy",
+        "url": "https://codepen.io/davidakennedy/"
+      }
+    }
+  }
+}
