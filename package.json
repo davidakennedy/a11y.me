@@ -4,9 +4,9 @@
   "description": "A good start on web accessibility for you.",
   "main": "index.js",
   "scripts": {
-    "build": "ELEVENTY_ENV=prod npx @11ty/eleventy",
-    "serve": "ELEVENTY_ENV=dev npx @11ty/eleventy --serve",
-    "debug": "DEBUG=* @11ty/eleventy"
+    "build": "ELEVENTY_ENV=prod eleventy",
+    "serve": "ELEVENTY_ENV=dev eleventy --serve",
+    "debug": "DEBUG=* eleventy"
   },
   "repository": {
     "type": "git",
