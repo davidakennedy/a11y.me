@@ -1,6 +1,7 @@
 ---
 title: Accessibility and Me
 description: A list of resources to get started with web accessibility.
+date: Last Modified
 layout: layouts/base.njk
 templateClass: page-template
 permalink: index.html
@@ -48,7 +49,7 @@ Here you’ll find several useful online resources related to web accessibility 
 - [Chrome Vox](http://www.chromevox.com/): A screenreader for ChromeOS.
 - [Easy Checks](http://www.w3.org/WAI/eval/preliminary): A set of simple checks developers can make while building websites and applications.
 
-Last updated: 2019-06-06
+Last updated: {{ page.date | readableDate }}
 
 ## About
 
