@@ -2,7 +2,6 @@
 const { DateTime } = require("luxon");
 const fs = require("fs");
 const markdownIt = require("markdown-it");
-const markdownItAnchor = require("markdown-it-anchor");
 
 // Configuration and plugins.
 module.exports = function (eleventyConfig) {
@@ -29,7 +28,12 @@ module.exports = function (eleventyConfig) {
     breaks: true,
     typographer: true,
     quotes: "“”‘’",
+  }).use(markdownItAnchor, {
+    permalink: true,
+    permalinkClass: "direct-link",
+    permalinkSymbol: "#",
   });
+
   eleventyConfig.addFilter("markdownify", (str) => {
     return markdownItRenderer.renderInline(str);
   });
@@ -81,10 +85,6 @@ module.exports = function (eleventyConfig) {
     breaks: true,
     typographer: true,
     quotes: "“”‘’",
-  }).use(markdownItAnchor, {
-    permalink: true,
-    permalinkClass: "direct-link",
-    permalinkSymbol: "#",
   });
   eleventyConfig.setLibrary("md", markdownLibrary);
 

@@ -2,7 +2,7 @@
   "name": "a11y.me",
   "version": "1.0.0",
   "description": "A good start on web accessibility for you.",
-  "main": "index.js",
+  "main": ".eleventy.js",
   "scripts": {
     "build": "ELEVENTY_ENV=prod eleventy",
     "serve": "ELEVENTY_ENV=dev eleventy --serve",
@@ -12,7 +12,6 @@
     "type": "git",
     "url": "git+https://github.com/davidakennedy/a11y.me.git"
   },
-  "keywords": [],
   "author": "David A. Kennedy",
   "license": "GPL-3.0",
   "bugs": {
