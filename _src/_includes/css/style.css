@@ -255,8 +255,8 @@ a:active::after {
   top: 2px;
 }
 
-a[href*="#"]:hover::after,
-a[href*="#"]:focus::after {
+a[href^="#"]:not(.skip-link):hover::after,
+a[href^="#"]:not(.skip-link):focus::after {
   background-image: url("/assets/img/hash.svg");
   background-size: contain;
   background-position: left center;

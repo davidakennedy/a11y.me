@@ -13,7 +13,7 @@ Where do you start? Right here.
 
 Here you’ll find several useful online resources related to web accessibility and a brief description on how it will help you. The list will always be concise, current and geared toward starting with accessibility or topics within it.
 
-<h2><a id="thebest" href="#thebest">The Best</a></h2>
+<h2><a id="thebest" href="#thebest">The best</a></h2>
 
 - [WebAIM](http://webaim.org/): WebAIM has provided comprehensive web accessibility solutions since 1999, and is one of the leading providers of web accessibility expertise internationally. WebAIM is a non-profit organization within the [Center for Persons with Disabilities](http://www.cpd.usu.edu/) at [Utah State University](http://www.usu.edu/). The site brings together a huge collection of information about web accessibility. Most of it is up to date and evergreen enough to help you. The [organization's blog](http://webaim.org/blog/) tackles many modern-day, evolving topics related to web accessibility.
 - [The A11Y Project](https://a11yproject.com/): This open source intiative aims to make web accessibility easier. It includes tips, tutorials and information on how to test for better accessibility. Much of the content authored remains well written, on the shorter side and digestable.
@@ -46,5 +46,12 @@ Here you’ll find several useful online resources related to web accessibility 
 - [VoiceOver for iOS](http://www.apple.com/accessibility/iphone/vision.html): Built-in screenreader for Mac.
 - [Chrome Vox](http://www.chromevox.com/): A screenreader for ChromeOS.
 - [Easy Checks](http://www.w3.org/WAI/eval/preliminary): A set of simple checks developers can make while building websites and applications.
+
+<h2><a id="efforts" href="#efforts">Similar efforts</a></h2>
+
+Others have created similar, outstanding efforts to get you started in accessibility. Some of my favorites include:
+
+- [A11y Coffee](https://a11y.coffee/): Pick your serving size of web accessibility information.
+- [Solid Start](https://www.solidstart.info/): Four areas to you can test for to make your work more inclusive.
 
 ---
