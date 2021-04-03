@@ -40,7 +40,9 @@ html {
   --secondary: #d90368;
   --teriery: #ffd400;
   --text: #2e294e;
+  background-color: #f1e9da;
   background-color: var(--background);
+  color: #2e294e;
   color: var(--text);
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
     Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
@@ -110,6 +112,7 @@ html {
 .stack > * + *,
 .stack + .stack,
 .stack > .stack {
+  margin-top: 1em;
   margin-top: var(--stack-space, 1em);
 }
 
@@ -129,6 +132,7 @@ h3,
 h4,
 .h4 {
   clear: both;
+  color: #2e294e;
   color: var(--text);
   font-weight: 700;
   hyphens: auto;
@@ -174,7 +178,9 @@ abbr {
 }
 
 mark {
-  background: var(--primary);
+  background-color: #541388;
+  background-color: var(--primary);
+  color: #f1e9da;
   color: var(--background);
   text-decoration: none;
 }
@@ -229,9 +235,11 @@ dd {
 
 /* Links */
 a {
+  color: #541388;
   color: var(--primary);
   position: relative;
   text-decoration: underline;
+  text-decoration-color: #d90368;
   text-decoration-color: var(--secondary);
   text-decoration-skip-ink: auto;
 }
@@ -242,7 +250,9 @@ a:hover {
 }
 
 a:focus {
+  background-color: #541388;
   background-color: var(--primary);
+  color: #f1e9da;
   color: var(--background);
   outline: 2px dashed var(--text);
   outline-offset: 2px;
@@ -296,6 +306,7 @@ a[href^="#"]:not(.skip-link):focus::after {
 .page-content > h3 + *,
 .page-content > h4 + *,
 .page-content > dt + * {
+  margin-top: 0.5em;
   --stack-space: 0.5em;
 }
 
