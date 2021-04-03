@@ -1,11 +1,13 @@
 ---
-title: Accessibility and Me
+title: A11y & Me
 description: A list of resources to get started with web accessibility.
 date: Last Modified
 layout: layouts/base.njk
 templateClass: page-template
 permalink: index.html
 ---
+
+Welcome to A11y and Me! Heads up, [a11y is a numeronym for accessibility](https://www.a11yproject.com/posts/2017-08-26-a11y-and-other-numeronyms/).
 
 You've heard about this web accessibility thing and know a thing or two. You manage, design or build websites and someone has asked you, "Is your site accessibile?" You're not sure. You hope so! You scour the web to learn more, but discover it's a wild world of contradicting and incomplete information out there when it comes to accessibility.
 
