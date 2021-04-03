@@ -52,6 +52,6 @@ Here you’ll find several useful online resources related to web accessibility 
 Others have created similar, outstanding efforts to get you started in accessibility. Some of my favorites include:
 
 - [A11y Coffee](https://a11y.coffee/): Pick your serving size of web accessibility information.
-- [Solid Start](https://www.solidstart.info/): Four areas to you can test for to make your work more inclusive.
+- [Solid Start](https://www.solidstart.info/): There are four ways you can improve your creation for everybody. All four are testable, fixable and they improve usability for everybody.
 
 ---
