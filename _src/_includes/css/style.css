@@ -310,6 +310,7 @@ a[href*="#"]:focus::after {
 
 .site-footer {
   padding-bottom: 3em;
+  padding-top: 1em;
   text-align: center;
 }
 

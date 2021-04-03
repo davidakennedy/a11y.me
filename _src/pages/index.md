@@ -48,11 +48,3 @@ Here you’ll find several useful online resources related to web accessibility 
 - [Easy Checks](http://www.w3.org/WAI/eval/preliminary): A set of simple checks developers can make while building websites and applications.
 
 ---
-
-<h2><a id="about" href="#about">About</a></h2>
-
-Hi, I'm David A. Kennedy, a front end web developer with a passion for web accessibility. I created Accessibility and Me because it's hard finding the right resources to start learning about web accessibility. Hopefully, the resources here will help you dive into the subject of web accessibility, start to realize why it matters and implement accessibility in your projects.
-
-I plan to keep the list fresh with a mix of resources that both offer broad overviews and and resources that go in-depth, like tutorials and blog posts. It will only ever be one page. Like I said: concise, current and geared toward starting with accessibility. If you have suggestions for the site, you can send an email to [me@davidakennedy.com](mailto:me@davidakennedy.com).
-
-You can find out more about me on my [personal site](http://davidakennedy.com).
