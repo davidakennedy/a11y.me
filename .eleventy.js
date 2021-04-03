@@ -84,6 +84,7 @@ module.exports = function (eleventyConfig) {
     quotes: "“”‘’",
   }).use(markdownItAnchor, {
     permalink: true,
+    permalinkBefore: true,
     permalinkClass: "direct-link",
     permalinkSymbol: "#",
   });
