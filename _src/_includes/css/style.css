@@ -242,20 +242,23 @@ a:focus {
   text-decoration: none;
 }
 
-a:active {
+a:active,
+a:active::after {
   outline: 0;
   top: 2px;
 }
 
-h1 a,
-.h1,
-h2 a,
-.h2,
-h3 a,
-.h3,
-h4 a,
-.h4 {
-  color: var(--text);
+a[href*="#"]:hover::after,
+a[href*="#"]:focus::after {
+  background-image: url("/assets/img/hash.svg");
+  background-size: contain;
+  background-position: left center;
+  background-repeat: no-repeat;
+  content: "";
+  display: inline-block;
+  height: 100%;
+  position: absolute;
+  width: 100%;
 }
 
 .skip-link {

@@ -13,7 +13,7 @@ Where do you start? Right here.
 
 Here you’ll find several useful online resources related to web accessibility and a brief description on how it will help you. The list will always be concise, current and geared toward starting with accessibility or topics within it.
 
-## The Best
+<h2><a id="thebest" href="#thebest">The Best</a></h2>
 
 - [WebAIM](http://webaim.org/): WebAIM has provided comprehensive web accessibility solutions since 1999, and is one of the leading providers of web accessibility expertise internationally. WebAIM is a non-profit organization within the [Center for Persons with Disabilities](http://www.cpd.usu.edu/) at [Utah State University](http://www.usu.edu/). The site brings together a huge collection of information about web accessibility. Most of it is up to date and evergreen enough to help you. The [organization's blog](http://webaim.org/blog/) tackles many modern-day, evolving topics related to web accessibility.
 - [The A11Y Project](https://a11yproject.com/): This open source intiative aims to make web accessibility easier. It includes tips, tutorials and information on how to test for better accessibility. Much of the content authored remains well written, on the shorter side and digestable.
@@ -23,7 +23,7 @@ Here you’ll find several useful online resources related to web accessibility 
 - [Accessibility for Everyone](https://abookapart.com/products/accessibility-for-everyone): Laura Kalbag guides you through the accessibility landscape in an approachanble and pragmatic way. It will make you want to turn around and tackle accessibility the next day.
 - [Accessibility Weekly](https://a11yweekly.com/): Curated by me, David A. Kennedy, this newsletter aims to give you a weekly dose of web accessibility to help you bring it into your everyday work.
 
-## Favorites
+<h2><a id="favorites" href="#favorites">Favorites</a></h2>
 
 - [Accessibility Tips in Single-Page Applications](https://www.deque.com/blog/accessibility-tips-in-single-page-applications/): This post has a small set of tips to help you approach building a single page application in an accessible way.
 - [The Difference Between Keyboard and Screen Reader Navigation](https://tink.uk/the-difference-between-keyboard-and-screen-reader-navigation/): This blog post explains the differences between these two types of ways to navigate. They're often confused among designers and developers.
@@ -33,7 +33,7 @@ Here you’ll find several useful online resources related to web accessibility 
 - [Guide to Creating Accessible PDF Documents](http://webaim.org/techniques/acrobat/): An article from WebAIM on creating and testing PDFs.
 - [Creating Accessible Forms](http://webaim.org/techniques/forms/): A section from WebAIM on creating and maintaining accessible forms.
 
-## Tools
+<h2><a id="tools" href="#tools">Tools</a></h2>
 
 - [Accessibility for Designers](http://webaim.org/resources/designers/): An infographic about how designers can help create good, accessible websites.
 - [Axe: Accessibility for Development Teams Guide to Universal Design](https://www.deque.com/axe/): This automated testing tool is one of my favorites, and helps you start building accessibility into your dev process today.
@@ -51,7 +51,7 @@ Last updated: {{ page.date | readableDate }}
 
 ---
 
-## About
+<h2><a id="about" href="#about">About</a></h2>
 
 Hi, I'm David A. Kennedy, a front end web developer with a passion for web accessibility. I created Accessibility and Me because it's hard finding the right resources to start learning about web accessibility. Hopefully, the resources here will help you dive into the subject of web accessibility, start to realize why it matters and implement accessibility in your projects.
 
