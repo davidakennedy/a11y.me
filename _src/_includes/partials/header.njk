@@ -1,3 +1,6 @@
 <header id="masthead" class="site-header wrapper">
-  <p>{{ metadata.title }}, {{ metadata.description }}</p>
+  <div class="page-header stack">
+    {% set pagetitle = title or renderData.title %}
+    <h1 class="title p-name">{{ pagetitle | markdownify }}</h1>
+  </div>
 </header>

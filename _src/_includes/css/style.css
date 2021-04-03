@@ -35,18 +35,19 @@ html {
 /* Variables */
 :root {
   /* Colors */
-  --background: #fffffe;
-  --headline: #272343;
-  --lighttext: #767676;
-  --primary: #ffd803;
-  --secondary: #e3f6f5;
-  --text: #2d334a;
+  --background: #f1e9da;
+  --primary: #541388;
+  --secondary: #d90368;
+  --teriery: #ffd400;
+  --text: #2e294e;
   background-color: var(--background);
   color: var(--text);
-  font-family: var(--font-serif);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+  font-size: 100%;
   font-size: calc(0.65vw + 1em);
   font-weight: 400;
-  line-height: var(--line-height);
+  line-height: 1.5;
 }
 
 /* Global */
@@ -115,7 +116,7 @@ html {
 .wrapper {
   margin: 0 auto;
   max-width: 50rem;
-  padding: var(--s6) var(--s1);
+  padding: 0 1em;
 }
 
 /* Elements */
@@ -128,32 +129,31 @@ h3,
 h4,
 .h4 {
   clear: both;
-  color: var(--headline);
-  font-family: var(--font-headline);
+  color: var(--text);
   font-weight: 700;
   hyphens: auto;
-  line-height: var(--line-height-small);
+  line-height: 1.2;
   word-wrap: break-word;
 }
 
 h1,
 .h1 {
-  font-size: var(--s4);
+  font-size: 423.6%;
 }
 
 h2,
 .h2 {
-  font-size: var(--s3);
+  font-size: 261.8%;
 }
 
 h3,
 .h3 {
-  font-size: var(--s2);
+  font-size: 161.8%;
 }
 
 h4,
 .h4 {
-  font-size: var(--s1);
+  font-size: 100%;
 }
 
 b,
@@ -162,23 +162,29 @@ strong {
 }
 
 abbr {
-  border-bottom: 1px dotted var(--lighttext);
+  border-bottom: 1px dotted var(--secondary);
   cursor: help;
 }
 
 mark {
-  background: var(--secondary);
-  color: var(--text);
+  background: var(--primary);
+  color: var(--background);
   text-decoration: none;
 }
 
 small {
-  font-size: var(--s-2);
+  font-size: 85%;
 }
 
 hr {
-  background-image: radial-gradient(currentColor 0.5px, transparent 0.5px);
-  background-size: calc(10 * 0.5px) calc(10 * 0.5px);
+  background-image: repeating-linear-gradient(
+    45deg,
+    currentColor 0,
+    currentColor 1px,
+    transparent 0,
+    transparent 50%
+  );
+  background-size: 10px 10px;
   border: 0;
   height: 15px;
   margin-top: 0;
@@ -186,7 +192,7 @@ hr {
 
 ul,
 ol {
-  margin-left: var(--s1);
+  margin-left: 1.5em;
   margin-top: 0;
   padding: 0;
 }
@@ -202,38 +208,36 @@ ol {
 li > ul,
 li > ol {
   margin-bottom: 0;
-  margin-left: var(--s1);
+  margin-left: 2em;
 }
 
 dt {
-  border-bottom: 1px solid var(--lighttext);
-  font-family: var(--font-headline);
   font-weight: 700;
 }
 
 dd {
-  margin-left: var(--s1);
+  margin-left: 1.5em;
   margin-top: 0;
 }
 
 /* Links */
 a {
-  color: var(--text);
+  color: var(--primary);
   position: relative;
   text-decoration: underline;
-  text-decoration-color: var(--lighttext);
+  text-decoration-color: var(--secondary);
   text-decoration-skip-ink: auto;
 }
 
 a:hover {
-  background-color: var(--primary);
   outline: 0;
   text-decoration: none;
 }
 
 a:focus {
   background-color: var(--primary);
-  outline: 2px dashed;
+  color: var(--background);
+  outline: 2px dashed var(--text);
   outline-offset: 2px;
   text-decoration: none;
 }
@@ -251,25 +255,17 @@ h3 a,
 .h3,
 h4 a,
 .h4 {
-  color: var(--headline);
+  color: var(--text);
 }
 
 .skip-link {
-  font-family: var(--font-serif);
-  font-size: var(--s-1);
-  font-weight: 700;
-  left: var(--s3);
-  max-width: none;
-  padding: var(--s-3);
-  position: absolute;
+  left: 0.5em;
+  padding: 1em;
+  top: 0.5em;
 }
 
 .skip-link.focusable:focus {
   position: absolute;
-}
-
-.image-link {
-  display: block;
 }
 
 /* Widths */
@@ -277,25 +273,25 @@ h4 a,
 .page-content li,
 .page-content dt,
 .page-content dd {
-  max-width: var(--measure);
+  max-width: 65ch;
 }
 
 .page-content h2,
 .page-content h3,
 .page-content h4 {
-  max-width: var(--measure-narrow);
+  max-width: 30ch;
 }
 
 .page-content > h2 + *,
 .page-content > h3 + *,
 .page-content > h4 + *,
 .page-content > dt + * {
-  --stack-space: var(--s-3);
+  --stack-space: 0.5em;
 }
 
 /* Containers */
-.site-content {
-  max-width: var(--measure-wide);
+.site-header {
+  padding-top: 3em;
 }
 
 .site-content[tabindex="-1"]:focus {
@@ -303,6 +299,7 @@ h4 a,
 }
 
 .site-footer {
+  padding-bottom: 3em;
   text-align: center;
 }
 

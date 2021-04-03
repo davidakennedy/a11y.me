@@ -7,8 +7,6 @@ templateClass: page-template
 permalink: index.html
 ---
 
-# Welcome to A11y.me!
-
 You've heard about this web accessibility thing and know a thing or two. You manage, design or build websites and someone has asked you, "Is your site accessibile?" You're not sure. You hope so! You scour the web to learn more, but discover it's a wild world of contradicting and incomplete information out there when it comes to accessibility.
 
 Where do you start? Right here.
@@ -50,6 +48,8 @@ Here you’ll find several useful online resources related to web accessibility 
 - [Easy Checks](http://www.w3.org/WAI/eval/preliminary): A set of simple checks developers can make while building websites and applications.
 
 Last updated: {{ page.date | readableDate }}
+
+---
 
 ## About
 

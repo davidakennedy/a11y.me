@@ -7,15 +7,11 @@
 
     <main id="content" class="site-content wrapper">
       {% block content %}
-        <section class="page">
-          <div class="page-header stack">
-            {% set pagetitle = title or renderData.title %}
-            <h1 class="title p-name">{{ pagetitle | markdownify }}</h1>
-          </div>
+        <div class="page">
           <div class="page-content stack">
             {{ content | safe }}
           </div>
-        </section>
+        </div>
       {% endblock content %}
     </main>
 
