@@ -1,12 +1,12 @@
-{%- set absolutePageUrl -%}{{ page.url | url | absoluteUrl(metadata.url) }}{%- endset -%}
+{%- set absolutePageUrl -%}{{ metadata.url }}{{ page.url | url }}{%- endset -%}
 
 {# Page-Specific #}
 <meta name="description" content="{{ renderData.description or description or metadata.description }}">
 <meta property="og:title" content="{{ title or metadata.title }}">
 <meta property="og:description" content="{{ description or metadata.description }}">
 <meta property="og:url" content="{{ absolutePageUrl }}">
-<meta property="og:image" content="{%- if image -%}{{ image | imgPath | url | absoluteUrl(metadata.url) }}{%- else -%}{{ metadata.author.avatar | url | absoluteUrl(metadata.url) }}{%- endif -%}">
-<meta name="twitter:card" content="{% if isPost -%}summary_large_image{% else %}summary{% endif %}">
+<meta property="og:image" content="{{ metadata.author.avatar | url }}">
+<meta name="twitter:card" content="summary">
 
 {# General #}
 <meta name="author" content="{{ metadata.author.name }}">
