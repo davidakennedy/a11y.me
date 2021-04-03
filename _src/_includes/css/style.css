@@ -343,7 +343,6 @@ a[href^="#"]:not(.skip-link):focus::after {
     margin: 0.5in;
   }
 
-  .site-header,
   .site-footer {
     display: none;
   }
