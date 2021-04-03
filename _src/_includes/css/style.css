@@ -289,17 +289,22 @@ a[href^="#"]:not(.skip-link):focus::after {
 }
 
 /* Widths */
+
+.page-header h1 {
+  max-width: 15ch;
+}
+
 .page-content p,
 .page-content li,
 .page-content dt,
 .page-content dd {
-  max-width: 65ch;
+  max-width: 60ch;
 }
 
 .page-content h2,
 .page-content h3,
 .page-content h4 {
-  max-width: 30ch;
+  max-width: 24ch;
 }
 
 .page-content > h2 + *,
