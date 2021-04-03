@@ -156,6 +156,13 @@ h4,
   font-size: 100%;
 }
 
+dfn,
+em,
+i,
+.date {
+  font-style: italic;
+}
+
 b,
 strong {
   font-weight: 700;

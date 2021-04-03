@@ -9,6 +9,7 @@
       {% block content %}
         <div class="page">
           <div class="page-content stack">
+            <span class="date"> Last updated on <time class="dt-published" datetime="{{ page.date | htmlDateString }}">{{ page.date | readableDate }}</time></span>
             {{ content | safe }}
           </div>
         </div>
