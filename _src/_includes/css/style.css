@@ -18,8 +18,10 @@ select {
   font: inherit;
 }
 
-html {
-  scroll-behavior: smooth;
+@media (prefers-reduced-motion: no-preference) {
+  html {
+    scroll-behavior: smooth;
+  }
 }
 
 /* Remove all animations and transitions for people that prefer not to see them */
