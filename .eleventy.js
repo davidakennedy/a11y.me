@@ -2,7 +2,9 @@
 const { DateTime } = require("luxon");
 const fs = require("fs");
 const markdownIt = require("markdown-it");
+const CleanCSS = require("clean-css");
 const Terser = require("terser");
+const htmlmin = require("html-minifier");
 
 // Configuration and plugins.
 module.exports = function (eleventyConfig) {
@@ -36,11 +38,6 @@ module.exports = function (eleventyConfig) {
   });
 
   // Development filters
-  const CleanCSS = require("clean-css");
-  eleventyConfig.addFilter("cssmin", function (code) {
-    return new CleanCSS({ sourceMap: true }).minify(code).styles;
-  });
-
   // Simple cache busting
   // https://rob.cogit8.org/posts/2020-10-28-simple-11ty-cache-busting/
   eleventyConfig.addFilter("bust", (url) => {
@@ -70,7 +67,6 @@ module.exports = function (eleventyConfig) {
     },
   });
 
-  const htmlmin = require("html-minifier");
   eleventyConfig.addTransform("htmlmin", function (content, outputPath) {
     if (process.env.ELEVENTY_ENV === "prod" && outputPath.endsWith(".html")) {
       let minified = htmlmin.minify(content, {
