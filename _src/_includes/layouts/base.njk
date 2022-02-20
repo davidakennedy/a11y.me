@@ -3,9 +3,13 @@
   {% include "partials/head.njk" %}
   <body{% if templateClass %} class="{{ templateClass }}"{% endif %}>
     <a class="skip-link sr-only focusable" href="#content">Skip to content</a>
-    {% include "partials/header.njk" %}
+    <header id="masthead" class="site-header wrapper">
+      {% block header %}
+        {% include "partials/header.njk" %}
+      {% endblock header %}
+    </header>
 
-    <main id="content" class="site-content wrapper">
+    <main id="content" class="site-content wrapper" tabindex="-1">
       {% block content %}
         <div class="page">
           <div class="page-content stack">
@@ -16,7 +20,11 @@
       {% endblock content %}
     </main>
 
-    {% include "partials/footer.njk" %}
+    <footer id="colophon" class="site-footer wrapper">
+      {% block footer %}
+        {% include "partials/footer.njk" %}
+      {% endblock footer %}
+    </footer>
 
     <!-- Current page: {{ page.url | url }} -->
   </body>
