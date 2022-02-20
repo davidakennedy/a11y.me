@@ -16,25 +16,3 @@
 <meta name="twitter:creator" content="@{{ metadata.author.name }}">
 
 <link rel="canonical" href="{{ absolutePageUrl }}">
-
-{# JSON LD #}
-<script type="application/ld+json">
-    {
-        "name":"{{ metadata.author.name }}",
-        "description":"{{ metadata.description }}",
-        "author": {
-            "@type":"Person",
-            "name":"{{ metadata.author.name }}"
-        },
-        "@type":"WebSite",
-        "url":"{{ metadata.url }}",
-        "image":"{{ metadata.url }}assets/img/logo/logo.jpg",
-        "headline":"{{ metadata.title }}",
-        "sameAs":[
-            "{{ metadata.author.social.twitter.url }}",
-            "{{ metadata.author.social.github.url }}",
-            "{{ metadata.author.social.codepen.url }}"
-        ],
-        "@context":"http://schema.org"
-    }
-</script>
