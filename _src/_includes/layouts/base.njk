@@ -20,12 +20,4 @@
 
     <!-- Current page: {{ page.url | url }} -->
   </body>
-  {% set js %}
-    {% include "js/main.js" %}
-  {% endset %}
-  {% if build.environment == "prod" %}
-  <script>{{ js | jsmin | safe }}</script>
-  {% else %}
-  <script>{{ js | safe }}</script>
-  {% endif %}
 </html>
