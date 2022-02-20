@@ -2,6 +2,7 @@
 const { DateTime } = require("luxon");
 const fs = require("fs");
 const markdownIt = require("markdown-it");
+const Terser = require("terser");
 
 // Configuration and plugins.
 module.exports = function (eleventyConfig) {
@@ -38,17 +39,6 @@ module.exports = function (eleventyConfig) {
   const CleanCSS = require("clean-css");
   eleventyConfig.addFilter("cssmin", function (code) {
     return new CleanCSS({ sourceMap: true }).minify(code).styles;
-  });
-
-  const Terser = require("terser");
-  eleventyConfig.addFilter("jsmin", function (code) {
-    let minified = Terser.minify(code);
-    if (minified.error) {
-      console.log("Terser error: ", minified.error);
-      return code;
-    }
-
-    return minified.code;
   });
 
   const htmlmin = require("html-minifier");
