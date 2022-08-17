@@ -41,7 +41,7 @@ Here you’ll find several useful online resources related to web accessibility 
 - [Axe: Accessibility for Development Teams Guide to Universal Design](https://www.deque.com/axe/): This automated testing tool is one of my favorites, and helps you start building accessibility into your dev process today.
 - [Wave](http://wave.webaim.org/): A web tool and Firefox add-on for evaluating the accessibility of web pages.
 - [WebAIM Color Contrast Checker](https://webaim.org/resources/contrastchecker/): A great tool for spot checking different color combinations.
-- [An Alt Text Decision Tree](http://dev.w3.org/html5/alt-techniques/developer.html#tree): A decision tree for deciding when and how to implement alt text in your work on the web. This is a work in progress by the editors of the HTML5 spec, but its extremely useful in its current form.
+- [An Alt Text Decision Tree](https://www.w3.org/WAI/tutorials/images/decision-tree/): A decision tree for deciding when and how to implement alt text in your work on the web. This is a work in progress by the editors of the HTML5 spec, but its extremely useful in its current form.
 - [NVDA](http://www.nvda-project.org/): A screenreader for Windows.
 - [JAWS](http://www.freedomscientific.com/products/fs/jaws-product-page.asp): The most popular screenreader. Available for Windows and cost money.
 - [VoiceOver](http://www.apple.com/accessibility/voiceover/): Built-in screenreader for Mac.
