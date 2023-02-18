@@ -1,7 +1,7 @@
 ---
 title: A11y & Me
 description: A list of resources to get started with web accessibility.
-date: Last Modified
+date: git Last Modified
 layout: layouts/base.njk
 templateClass: page-template
 permalink: index.html
