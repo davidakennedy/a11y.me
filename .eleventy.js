@@ -1,9 +1,7 @@
 // Requirements.
 const { DateTime } = require("luxon");
-const fs = require("fs");
 const markdownIt = require("markdown-it");
 const CleanCSS = require("clean-css");
-const Terser = require("terser");
 const htmlmin = require("html-minifier");
 
 // Configuration and plugins.
