@@ -1,4 +1,4 @@
-/* CSS Reset 
+/* CSS Reset
  * Inspired by: https://piccalil.li/blog/a-modern-css-reset
 */
 *,
@@ -46,8 +46,7 @@ select {
   background-color: var(--background);
   color: #2e294e;
   color: var(--text);
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-    Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+  font-family: system-ui, sans-serif;
   font-size: 100%;
   font-size: calc(0.65vw + 1em);
   font-weight: 400;
@@ -80,23 +79,6 @@ select {
   width: auto;
 }
 
-/* Hide visually and from screen readers, but maintain layout */
-.invisible {
-  visibility: hidden;
-}
-
-/* Clear floats */
-.clear:before,
-.clear:after {
-  content: "";
-  display: table;
-  table-layout: fixed;
-}
-
-.clear:after {
-  clear: both;
-}
-
 /* Make something stand out */
 .callout {
   border: 2px solid var(--lighttext);
@@ -126,14 +108,9 @@ select {
 
 /* Elements */
 h1,
-.h1,
 h2,
-.h2,
 h3,
-.h3,
-h4,
-.h4 {
-  clear: both;
+h4 {
   color: #2e294e;
   color: var(--text);
   font-weight: 700;
@@ -142,23 +119,19 @@ h4,
   word-wrap: break-word;
 }
 
-h1,
-.h1 {
+h1 {
   font-size: 423.6%;
 }
 
-h2,
-.h2 {
+h2 {
   font-size: 261.8%;
 }
 
-h3,
-.h3 {
+h3 {
   font-size: 161.8%;
 }
 
-h4,
-.h4 {
+h4 {
   font-size: 100%;
 }
 
@@ -298,7 +271,6 @@ a[href^="#"]:not(.skip-link):focus::after {
 }
 
 /* Widths */
-
 .page-header h1 {
   max-width: 15ch;
 }
